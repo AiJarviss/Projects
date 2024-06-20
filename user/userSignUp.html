@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpPage</title>
+    <link rel="stylesheet" href="userSU.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="warpper">
+                <div class="form-box Sign Up">
+                    <h2>User SignUp</h2>
+                    <form action="Signup">
+                        <div class="input-box">
+                            <i class='bx bxs-envelope'></i><label>Email</label>
+                            <input type="email" placeholder="xyz@gmail.com" required> 
+                        </div>
+                        <div class="input-box">
+                            <i class='bx bxs-lock-alt'></i><label>Password</label>
+                            <input type="password" placeholder="Password" required>
+                        </div>  
+                        <div class="input-box">
+                            <i class='bx bxs-lock-alt'></i><label> Confirm Password</label>
+                            <input type="password" placeholder="Password" required>
+                        </div> 
+                        <div class="input-box">
+                            <i class='bx bx-mobile'></i><label>Mobile Number</label>
+                            <input type="text"  oninput="this.value = this.value.replace(/[^0-9]/g, '');" placeholder="Mobile Number" required maxlength="10">
+                        </div>  
+                        <div class="remember-forget">
+                            <label><input type="checkbox" >I agree to the terms&conditions.</label>
+                        </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                            <div class="register-link">
+                                <p>Already have an account<a href="userlogin.html" class="register-link"> Login </a></p>
+                            </div>
+                            
+                                
+                    </form>
+                </div>
+                
+            </body>
+</html>

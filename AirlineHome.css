@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background: url(MainBG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+h1 {
+    justify-content: center;
+    padding-left: 360px;
+    padding-top: 25px;
+    font-size: 50px;
+    color: aliceblue;
+}
+.btn {
+    align-items: center;
+    padding-top: 200px;
+    padding-left: 220px;
+    word-spacing: 70px;
+}
+.btn a {
+    width: 250px;
+    font-size: 23px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    color: aliceblue;
+    border: 1.5px solid navy;
+    border-radius: 25px;
+    margin: 0 7px;
+    padding: 12px 0;
+    z-index: 1; 
+    overflow: hidden;
+    transition: .5s ease;
+}
+.btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    background:lightblue;
+    z-index:-1; 
+    transition: .5s;
+}
+.btn a:hover span {
+    width: 100%;
+}
+.btn a:hover {
+    color: navy;
+     
+}
